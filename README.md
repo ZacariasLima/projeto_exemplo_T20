@@ -2,6 +2,9 @@
 
 <p align="left"> 
   <strong>Seja Bem Vindo</strong>
+</p>
+
+<p align="Justify"> 
   Me Chamo Zacarias Figueiredo Lima, sou Analista de Negócios em empresa voltada para soluções comerciais de informática na área de Saneamento Básico, Gás e Energia.<br>
   Esse espaço está sendo utilizado para estudo do Django com a criação de ferramenta para suporte de sistema de RPG de Mesa.
 </p>
