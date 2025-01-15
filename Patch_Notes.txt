@@ -11,4 +11,8 @@ Tracking
 0.0.3 -> Criação das pastas partials e pages para o app character (Att do endereço no views)
          Separação entre o header e home, assim como importação do código CSS da aula
          Ajustes em nomes e ícones
-         Comentário do código.
+         Comentário do código da home e head.
+
+0.0.4 -> Renomeio de header.html para head.html, pois arquivo representa a head do html
+         Edição do arquivo header.html, pois esse simboliza o cabeçalho da página.
+         Adição da barra de consulta.
