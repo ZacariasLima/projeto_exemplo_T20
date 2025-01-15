@@ -1,8 +1,14 @@
 Tracking
 0.0.1 -> Criação do Project, app de personagens chamado Characters.
+
 0.0.2 -> Criação do Patch Note
          Criação dos templates globais (Pasta Base_Templates)
          Criação dos templates e urls de Characters
          Alteração da View de characters e include na view do Project
          Update do gitignore sobre a pasta VSCODE
          Adição da Base_Templates e do app characters no settings do project.
+
+0.0.3 -> Criação das pastas partials e pages para o app character (Att do endereço no views)
+         Separação entre o header e home, assim como importação do código CSS da aula
+         Ajustes em nomes e ícones
+         Comentário do código.
