@@ -1,26 +1,16 @@
-<!-- Arquivo Base da Home Page -->
+{% extends "global/base.html" %}<!-- Arquivo Base do site -->
 
-{% include "characters/partials/head.html" %}  <!-- Inclusão da HEAD do html -->
+{% block title %}Home |{% endblock title %}
 
-<body>
-    {% include "characters/partials/header.html" %} <!-- Inclusão do Cabeçalho -->
+{% block content %}
+    <div class="main-content main-content-list container">
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
 
-    {% include "characters/partials/search.html" %} <!-- Inclusão da barra de busca -->
-
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-
-        </div>
-    </main>
-
-    {% include "characters/partials/footer.html" %}
-</body>
-
-</html>
+    </div>
+{% endblock content %}

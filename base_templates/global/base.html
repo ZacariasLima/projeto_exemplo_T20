@@ -1,0 +1,23 @@
+<!-- Arquivo Base de layout do site-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {% include "characters/partials/head.html" %} <!-- Inclusão da HEAD do html -->
+    
+    <title>{% block title %}{% endblock title %} Characters</title>    
+</head>
+
+<body>
+    {% include "characters/partials/header.html" %} <!-- Inclusão do Cabeçalho -->
+
+    {% include "characters/partials/search.html" %} <!-- Inclusão da barra de busca -->
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+    </main>
+
+    {% include "characters/partials/footer.html" %}
+</body>
+
+</html>

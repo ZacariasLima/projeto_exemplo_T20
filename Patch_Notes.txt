@@ -19,3 +19,14 @@ Tracking
 
 0.0.5 -> Completando os partials de footer, item de grid e Barra de pesquisa
          Criação do grid e alteração do home para incluir os grid, itens, rodapé e pesquisa
+
+0.0.6 -> Adição das pastas static e base_static.
+         Organização do css em arquivo estático e load no head
+         Alteração das settings:
+            Adição de base_static nos staticfiles e static_root
+            Adição de templates_dir do app characters, permitindo adição de context no render.
+         Alterações na URL para aceitar parâmetros e utilizar as views
+         Alterações nas views para renderiação de páginas e adição de context 
+         Criação da página de detalhe do character junto com edição necessária de css
+         Criação do base.html para utilização de herança de template
+         Ajustes na home.html e head.html para melhor utilização da Herança com base.html
