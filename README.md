@@ -22,12 +22,12 @@
 </p>
 
 <p align="left">
-  <a href="#" title="Gmail">
+  <a href="zaca.figueiredo.lima@gmail.com" title="Gmail">
   <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white&link=zaca.figueiredo.lima@gmail.com" alt="Gmail"/></a>
-  <a href="#" title="LinkedIn">
+  <a href="www.linkedin.com/in/zacarias-lima-65954637" title="LinkedIn">
   <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/zacarias-lima-65954637" alt="LinkedIn"/></a>
-  <a href="#" title="Facebook">
+  <a href="https://www.facebook.com/zacarias.figueiredolima/" title="Facebook">
   <img src="https://img.shields.io/badge/-Facebook-3b5998?style=flat-square&labelColor=3b5998&logo=facebook&logoColor=white&link=https://www.facebook.com/zacarias.figueiredolima/" alt="Facebook"/></a>
-  <a href="#" title="Instagram">
+  <a href="https://www.instagram.com/zaca_lima/" title="Instagram">
   <img src="https://img.shields.io/badge/-Instagram-DF0174?style=flat-square&labelColor=DF0174&logo=instagram&logoColor=white&link=https://www.instagram.com/zaca_lima/" alt="Instagram"/></a>
 </p>
