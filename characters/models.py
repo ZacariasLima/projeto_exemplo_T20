@@ -1,42 +1,69 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.contrib.postgres.fields import ArrayField
+from utils.characters.constants import *
 
 # Create your models here.
+class Race (models.Model):
+    name = models.CharField(max_length=65)
+    #Fixed choices
+    size = models.CharField(max_length=2, choices=SIZES_CHOICES)
 
-'''
-Planejamento BASE da Classe Personagem
-    - Nome
-    - Jogador
-    - Nivel
-    - FOR
-    - DES
-    - CON
-    - INT
-    - SAB
-    - CAR
-    - PONTO DE VIDA
-    - PONTOS DE MANA
-    - DEFESA
-    - Tamanho
-    - Deslocamento
-    - Background
-    - Funcao
-    - Raça (PK)
-    - Origem (PK)
-    - Classe (PK)
-    - Divindade (PK)
+    def __str__(self):
+        return self.name
+    
 
-BASE Raça
-    - Nome
-    - Tamanho
+class Origin (models.Model):
+    name = models.CharField(max_length=65)
 
-BASE Origem
-    - Nome
+    def __str__(self):
+        return self.name
 
-BASE Classe
-    - Nome
+class Faith (models.Model):
+    name = models.CharField(max_length=65)
 
-BASE Divindade
-    - Nome
+    def __str__(self):
+        return self.name
 
+class Classe (models.Model):
+    name = models.CharField(max_length=65)
 
-'''
+    def __str__(self):
+        return self.name
+
+class Character (models.Model):
+    name = models.CharField(max_length=65)
+    level = models.IntegerField()
+    attributes = ArrayField(
+        base_field= models.IntegerField (default=0),
+        size = 6 
+    )
+    hit_points = models.IntegerField()
+    mana_points = models.IntegerField()
+    armor_class = models.IntegerField()
+    speed = models.DecimalField(max_digits=6, decimal_places=1)
+    background = models.TextField()
+    #Fixed choices
+    size = models.CharField(max_length=2, choices=SIZES_CHOICES)
+    role = models.CharField(max_length=3, choices=ROLES_CHOICES)
+    picture = models.ImageField(upload_to='characters/pictures/%Y/%m/%d' )
+    #ForeignKeys
+    player = models.ForeignKey(
+        User, on_delete=models.CASCADE
+    )
+    race = models.ForeignKey(
+        Race, on_delete=models.CASCADE
+    )
+    origin = models.ForeignKey(
+        Origin, on_delete=models.CASCADE
+    )
+    faith = models.ForeignKey(
+        Faith, on_delete=models.SET_NULL, null=True
+    )
+    #MUDAR FUTURAMENTE PARA MANY TO MANY
+    classes = models.ForeignKey(
+        Classe, on_delete=models.SET_NULL, null=True
+    )
+
+    def __str__(self):
+        return (self.name+' - '+self.race+' - '+self.role)

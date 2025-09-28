@@ -40,3 +40,5 @@ Tracking
 0.0.8 -> Criar os models de personagens
          Configurar o admin para CRUD dos models
          Configurar upload de imagens e exibição via link (MEDIA_DIR e MEDIA_ROOT em settings e urls)
+         Criação de Super User no django (zacariaslima abc@123.)
+         Instalação do psycopg2
