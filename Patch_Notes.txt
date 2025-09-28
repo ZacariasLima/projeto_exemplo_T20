@@ -30,3 +30,13 @@ Tracking
          Criação da página de detalhe do character junto com edição necessária de css
          Criação do base.html para utilização de herança de template
          Ajustes na home.html e head.html para melhor utilização da Herança com base.html
+
+0.0.7 -> Instalação do Faker e Pillow na venv
+         Adição de Utils para simulação de conteúdo
+         Ajustes na páginas home e character para dados dinâmicos, assim como no CSS
+         Ajustes para links dinâmicos
+
+** Planejamento para próxima versão **
+0.0.8 -> Criar os models de personagens
+         Configurar o admin para CRUD dos models
+         Configurar upload de imagens e exibição via link (MEDIA_DIR e MEDIA_ROOT em settings e urls)

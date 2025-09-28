@@ -4,13 +4,9 @@
 
 {% block content %}
     <div class="main-content main-content-list container">
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-        {% include "characters/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-
+         <!-- Inclusão do item da lista -->
+        {% for character in characters %}
+            {% include "characters/partials/character_item.html" %}
+        {% endfor %}
     </div>
 {% endblock content %}
