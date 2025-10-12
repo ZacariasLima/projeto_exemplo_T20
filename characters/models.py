@@ -6,8 +6,7 @@ from utils.characters.constants import *
 # Create your models here.
 class Race (models.Model):
     name = models.CharField(max_length=65)
-    #Fixed choices
-    size = models.CharField(max_length=2, choices=SIZES_CHOICES)
+    size = models.CharField(max_length=2, choices=SIZES_CHOICES, default='MD')
 
     def __str__(self):
         return self.name
@@ -34,10 +33,12 @@ class Classe (models.Model):
 class Character (models.Model):
     name = models.CharField(max_length=65)
     level = models.IntegerField()
-    attributes = ArrayField(
-        base_field= models.IntegerField (default=0),
-        size = 6 
-    )
+    att_str = models.IntegerField (default=0)
+    att_dex = models.IntegerField (default=0)
+    att_con = models.IntegerField (default=0)
+    att_int = models.IntegerField (default=0)
+    att_sab = models.IntegerField (default=0)
+    att_char = models.IntegerField (default=0)
     hit_points = models.IntegerField()
     mana_points = models.IntegerField()
     armor_class = models.IntegerField()
@@ -66,4 +67,4 @@ class Character (models.Model):
     )
 
     def __str__(self):
-        return (self.name+' - '+self.race+' - '+self.role)
+        return self.name
